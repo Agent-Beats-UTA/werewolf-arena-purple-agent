@@ -27,7 +27,7 @@ class Agent:
         )
         
         response = self.llm.execute_prompt(
-            prompt=message
+            prompt=get_message_text(message)
         )
         
         await updater.add_artifact(
